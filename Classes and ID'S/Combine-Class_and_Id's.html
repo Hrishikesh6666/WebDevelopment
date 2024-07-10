@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combination of Classes and ID's</title>
+    <style>
+        .text-bold {
+            font-weight: bold;
+
+            #special {
+                color: yellow;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p id="special" class="text-bold">
+        Differences between Classes and IDs <br><br>
+        Uniqueness  : IDs must be unique within a document, meaning only one element can have a particular ID. Classes can
+        be used multiple times across different elements.<br>
+        Specificity : ID selectors have higher specificity in CSS than class selectors. This means styles defined with
+        IDs will override those defined with classes if both are applied to the same element.
+    </p>
+</body>
+
+</html>
