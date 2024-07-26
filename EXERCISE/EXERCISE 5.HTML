@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create A Different Color Website</title>
+</head>
+<style>
+    :root {
+        --primary-color: rgb(6, 33, 138);
+        --text-color: white;
+        --secondary-color: rgb(7, 85, 137);
+    }
+
+    ul li {
+        padding: 20px;
+        display: inline;
+        list-style: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    body {
+        background-color: var(--secondary-color);
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+    }
+
+    nav {
+        background-color: var(--primary-color);
+        padding: 15px 0;
+    }
+
+    ul li a {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+    .class-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: green;
+        margin: 4px 21px;
+        padding: 20px;
+    }
+
+    .class1,
+    .class2 {
+        padding: 58px;
+        margin: 30px;
+        border: 2px solid black;
+        height: 288vh;
+        width: 45%;
+    }
+
+    .class1 {
+        background-color: rgb(28, 163, 84);
+    }
+
+    .class2 {
+        background-color: aquamarine;
+    }
+
+    .container {
+        border: 2px solid black;
+        height: 100px;
+        width: 90vw;
+        padding: 13px 8px 16px 12px;
+        margin: 27px;
+        background-color: white;
+        border-radius: 12px;
+    }
+
+    /* Fixed position for the last img element */
+    .container+div img {
+        position: fixed;
+        bottom: 38px;
+        left: 701px;
+        padding: 2px 28px 4px 20px;
+        gap: 50px;
+    }
+
+    footer {
+        border: 2px solid black;
+        padding: 0px;
+        height: 9vh;
+        width: 100vw;
+        background-color: azure;
+
+
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="class-container">
+        <div class="class1"></div>
+        <div class="class2"></div>
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga at similique quaerat veniam unde dolore
+            accusamus mollitia nesciunt exercitationem quod voluptas, nam ullam porro, laborum iure, eos autem et
+            blanditiis debitis voluptatibus! Sapiente eligendi distinctio dolorum iste fugit quas odio minima velit
+            debitis dignissimos soluta, a at ab doloribus, explicabo atque facere id dolor enim quisquam possimus
+            aliquid. Explicabo ab optio eum sed modi!
+        </p>
+    </div>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/SpaceX_logo_black.svg">
+    </div>
+    <div>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>

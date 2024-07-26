@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEXBOX</title>
+    <style>
+        .logo {  
+        }
+
+        .logo img{
+            width: 164px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: "Segoe UI";
+        }
+
+        .right ul {
+            display: flex;
+            gap: 34px;
+        }
+
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Product</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <li>About Us</li>
+                    <li>Security And Compliance</li>
+
+                    <li>
+                        <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></div>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
