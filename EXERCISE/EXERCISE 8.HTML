@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <style>
+        .countainer{
+            position: relative;
+            height: 85vh;
+            width: 95vw;
+            background-color: antiquewhite;
+            border: 2px solid black;
+
+        }
+        .box{
+            height: 75px;
+            width: 75px;
+            background-color: rgb(100, 16, 169);
+            border: 3px solid black;
+            border-radius: 65px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: AnimationX 3s infinite linear alternate ,  AnimationY 1s ease-out 1s infinite alternate;
+
+            
+
+        }
+    </style>
+    <style>
+        @keyframes AnimationX {
+            from{
+                left:0%;
+                background-color:  rgb(206, 11, 206);
+            }
+            to{
+                left: 100%;
+                background-color: rgb(4, 9, 62);
+            }
+            
+        }
+        @keyframes AnimationY{
+            from{
+                bottom: 0%;
+            }
+            to{
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="countainer">
+        <div class="box">$</div>
+    </div>
+    
+</body>
+</html>
