@@ -2,10 +2,12 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
-.body{
+body{
     background-color: black;
 }
+
 .main{
     background-image: url(Assets/Image/bg2.JPEG);
     background-position: center center;
@@ -56,7 +58,7 @@ nav button{
     
 }
 .hero>:nth-child(1){
-    font-size: 52px;
+    font-size: 60px;
     font-family: 'Martel Sans', sans-serif; 
     font-weight:bold;
     text-align: center;
@@ -123,29 +125,64 @@ nav button{
 .first{
     display: flex;
     justify-content: center;
-    max-width: 100vw;
+    max-width: 75vw;
+    margin: auto;
+    color: white;
+    align-items: center;
     
 }
 .secImg{
     position: relative;
-    display: flex;
-    justify-content: space-between;
+    padding-bottom: 85px;
+   
 }
 .secImg img {
-    width: 555px;
+    width: 40vw;
     position: relative;
     z-index: 10;
 }
-section.first>div {
+.secImg video{
+    position: absolute;
+    top: 90px;
+    left: 78px;
+    width: 29vw;
+}
+section.first>div{
     display: flex;
-    flex-direction: column;
-    padding: 34px 0;
+    flex-direction: column;   
 }
-section.first>div :nth-child(1) {
+section.first>div :nth-child(1){
     font-size: 48px;
-    font-weight: bolder;
+    font-weight: bold;
 }
-section.first>div :nth-child(2) {
+section.first>div :nth-child(3){
+    font-size: 25px; 
+}
+.faq h3 {
+    color: white;
+    text-align: center;
+    font-size: 38px;
+}
+.faq {
+    background: black;
+    color: white;
+    padding: 56px;
+}
+.faqbox:hover {
+    background-color: #514e4e;
+    color: white;
+}
+.faqbox svg {
+    filter: invert(1);
+}
+.faqbox {
+    transition: all 0.5s ease-out;
     font-size: 24px;
-
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
 }
