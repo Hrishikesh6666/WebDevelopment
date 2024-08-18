@@ -35,6 +35,11 @@ console.log(add(6,4))
 const Multiply = (x,y) => x*y;
 console.log(Multiply(6,6));
 
+const Square = (x) => x**2;
+console.log(Square (8));
+
+
+
 //                                     CHAPTER 4 : STRINGS
 
 /*NOTE : Use Quotes (``) to simplifay the code  */
@@ -44,10 +49,12 @@ let Oner = "HS Limited"
 console.log(`${real_name} is the Oner of ${Oner} and he is the best Business man in the INDIA`)
 
 //  OTHER
-let Name = "Hrishikesh"
-Name.length
-Name.toLocaleUpperCase
-Name.toLocaleLowerCase
-Name.slice(0,5)
-Name.replace("Hrishikesh","MAHADAVE")
+// let Name = "Hrishikesh"
+// Name.length
+// Name.toLocaleUpperCase
+// Name.toLocaleLowerCase
+// Name.slice(0,5)
+// Name.replace("Hrishikesh","MAHADAVE")
+
+
 
