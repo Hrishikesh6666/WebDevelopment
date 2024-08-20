@@ -48,4 +48,48 @@ let concat=a1.concat(a2,a3)
 console.log(concat)
 
 
-// LOOPING THROUGH ARRAYS
+//LOOPING ,THROUGH, ARRAYS
+
+
+// For each loop
+const a =[1,2,3]
+a.forEach((value,index,Array) => {
+    console.log(value,index,Array)
+    
+})
+//for of loop 
+arr = [1,2,3,4,5]
+for (const element of arr) {
+    console.log(element)   
+}
+console.log(arr.join(" and "))
+arr.pop()
+console.log(arr)
+arr.push(10)
+console.log(arr)
+arr.reverse()
+console.log(arr)
+
+// For in Loop
+let object = [10,45,66,78,100]
+for (const key in object) {
+    if (Object.prototype.hasOwnProperty.call(object, key)) {
+        const element = object[key];
+        
+    }
+}
+
+// Using [MAP] Operation map()
+
+let shiv = [1,2,9,4,5]
+let newArr=[]
+for (let index = 0; index < shiv.length; index++) {
+    const element = shiv[index];
+    newArr.push(element**2) 
+}
+console.log(newArr)
+       //using MAP()
+
+let Ram = shiv.map(e => e ** 3);
+console.log(Ram)
+
