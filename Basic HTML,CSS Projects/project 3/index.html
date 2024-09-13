@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractive Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar a {
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        .container {
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .container img {
+            width: 10%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .container img:hover {
+            width: 30%;
+            transform: scale(1.2);
+            box-shadow: 0 10px 30px rgba(241, 236, 236, 0.2);
+        }
+
+        /* Animation Styling */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container img {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIJ156_WVxbcjJexB2G_M4F5VeE6tQ0BCaxA&s"
+            alt="Image 1">
+        <img src="https://www.shutterstock.com/shutterstock/photos/1960131820/display_1500/stock-photo-sunset-at-coast-of-the-lake-nature-landscape-nature-in-northern-europe-reflection-blue-sky-and-1960131820.jpg"
+            alt="Image 2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ82eWtqMHX0X9Cfqiqp6ipe6qNSqybUY-AFw&s"
+            alt="Image 3">
+        <img src="https://img.freepik.com/premium-photo/colorful-universe-galaxy-nebula-wallpaper-as-outer-space-concept_786587-2615.jpg"
+            alt="Image 4">
+        <img src="https://i1.sndcdn.com/avatars-za2rW5qWjt6wX6Aa-keNUcA-t1080x1080.jpg" alt="Image 5">
+    </div>
+</body>
+
+</html>
